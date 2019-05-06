@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speedy Gamey</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main">
+    <div class="name">
+      <h1>Speedy Gamey</h1>
+    </div>
+
+    <div class="score">
+      <p>Your score is <span id="score">0</span></p>
+    </div>
+
+    <div class="ballsContainer">
+      <p>Your friend invited you to sauna tonight. By good fortune, you are close to Alko, but it closes in a few minutes. Buy as much beer as possible.</p>
+      <div class="balls" id="ball0">
+      </div>
+      <div class="balls" id="ball1">
+      </div>
+      <div class="balls" id="ball2">
+      </div>
+      <div class="balls" id="ball3">
+      </div>
+    </div>
+
+    <div class="btns">
+      <button type="button" onclick="pickNext()">Start game</button>
+      <button type="button" onclick="window.location.reload()">Stop game</button>
+    </div>
+  </div>
+
+  <div class="notification" id="showEnd">
+    <button onclick="window.location.reload()">Close</button>
+    <div class="noti">
+      <br><br><br><br><br><br>
+      <p id="endGame">Oops, Alko is closed.</p>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <div class="cover" id="cover">
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
